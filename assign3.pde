@@ -208,8 +208,8 @@ void draw() {
 		// Health UI
      for(int x=10; x<340; x+=70){
        image(life,x,10);
-      // if(aPressed){
-       //}
+       //if(aPressed){
+      // }
      }
      
 		break;
