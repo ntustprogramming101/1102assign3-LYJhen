@@ -116,15 +116,55 @@ void draw() {
 		// Soil - REPLACE THIS PART WITH YOUR LOOP CODE!
 		
     for(int x=0; x<width; x+=block){
-       for(int o=160; o<480; o+=block){
-         image(soil0, x,o);
+       for(int y=160; y<480; y+=block){
+         image(soil0, x,y);
       }
     }
-   //for(int y=480; y<800; y+=block){
-     // image(soil1, block, block);
-     // for(int x=0; x<width; x+=block){
-     // }
-    //}
+
+    for(int x=0; x<width; x+=block){
+      for(int y=0; y<320; y+=block){
+      pushMatrix();
+      translate(0, 480);
+      image(soil1, x, y);
+      popMatrix();
+     }
+    }
+    
+    for(int x=0; x<width; x+=block){
+      for(int y=0; y<320; y+=block){
+      pushMatrix();
+      translate(0, 800);
+      image(soil2, x, y);
+      popMatrix();
+     }
+    }
+    
+    for(int x=0; x<width; x+=block){
+      for(int y=0; y<320; y+=block){
+      pushMatrix();
+      translate(0, 1120);
+      image(soil3, x, y);
+      popMatrix();
+     }
+    }
+
+    for(int x=0; x<width; x+=block){
+      for(int y=0; y<320; y+=block){
+      pushMatrix();
+      translate(0, 1440);
+      image(soil4, x, y);
+      popMatrix();
+     }
+    }
+    
+    for(int x=0; x<width; x+=block){
+      for(int y=0; y<320; y+=block){
+      pushMatrix();
+      translate(0, 1760);
+      image(soil5, x, y);
+      popMatrix();
+     }
+    }
 		// Player
       //Draw hog
     switch(groundhogStat){
@@ -166,9 +206,12 @@ void draw() {
    }
 
 		// Health UI
-     image(life,10,10);
-     image(life,80,10);   
-
+     for(int x=10; x<340; x+=70){
+       image(life,x,10);
+      // if(aPressed){
+       //}
+     }
+     
 		break;
 
 		case GAME_OVER: // Gameover Screen
