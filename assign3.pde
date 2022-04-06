@@ -119,8 +119,13 @@ void draw() {
        for(int y=160; y<480; y+=block){
          image(soil0, x,y);
       }
-    }
-
+    }   
+         image(stone1, 0, 160);
+         image(stone1, 0+block, 160+block);
+         image(stone1, 0+block*2, 160+block*2);
+         image(stone1, 0+block*3, 160+block*3);
+       
+  
     for(int x=0; x<width; x+=block){
       for(int y=0; y<320; y+=block){
       pushMatrix();
@@ -129,7 +134,11 @@ void draw() {
       popMatrix();
      }
     }
-    
+      image(stone1, 0+block*4, 160+block*4);
+      image(stone1, 0+block*5, 160+block*5);
+      image(stone1, 0+block*6, 160+block*6);
+      image(stone1, 0+block*7, 160+block*7);
+          
     for(int x=0; x<width; x+=block){
       for(int y=0; y<320; y+=block){
       pushMatrix();
@@ -138,7 +147,7 @@ void draw() {
       popMatrix();
      }
     }
-    
+         
     for(int x=0; x<width; x+=block){
       for(int y=0; y<320; y+=block){
       pushMatrix();
@@ -147,6 +156,38 @@ void draw() {
       popMatrix();
      }
     }
+      image(stone1, 0+block, 160+block*8);
+      image(stone1, 0+block*2, 160+block*8);
+      image(stone1, 0+block*5, 160+block*8);
+      image(stone1, 0+block*6, 160+block*8);
+      image(stone1, 0, 160+block*9);
+      image(stone1, 0+block*3, 160+block*9);
+      image(stone1, 0+block*4, 160+block*9);
+      image(stone1, 0+block*7, 160+block*9);
+      image(stone1, 0, 160+block*10);
+      image(stone1, 0+block*3, 160+block*10);
+      image(stone1, 0+block*4, 160+block*10);
+      image(stone1, 0+block*7, 160+block*10);
+      image(stone1, 0+block, 160+block*11);
+      image(stone1, 0+block*2, 160+block*11);
+      image(stone1, 0+block*5, 160+block*11);
+      image(stone1, 0+block*6, 160+block*11);
+      image(stone1, 0+block, 160+block*12);
+      image(stone1, 0+block*2, 160+block*12);
+      image(stone1, 0+block*5, 160+block*12);
+      image(stone1, 0+block*6, 160+block*12);
+      image(stone1, 0, 160+block*13);
+      image(stone1, 0+block*3, 160+block*13);
+      image(stone1, 0+block*4, 160+block*13);
+      image(stone1, 0+block*7, 160+block*13);
+      image(stone1, 0, 160+block*13);
+      image(stone1, 0+block*3, 160+block*14);
+      image(stone1, 0+block*4, 160+block*14);
+      image(stone1, 0+block*7, 160+block*14);
+      image(stone1, 0+block, 160+block*15);
+      image(stone1, 0+block*2, 160+block*15);
+      image(stone1, 0+block*5, 160+block*15);
+      image(stone1, 0+block*6, 160+block*15);
 
     for(int x=0; x<width; x+=block){
       for(int y=0; y<320; y+=block){
@@ -165,6 +206,71 @@ void draw() {
       popMatrix();
      }
     }
+      image(stone1, 0+block, 160+block*16);
+      image(stone1, 0+block*2, 160+block*16);
+      image(stone1, 0+block*4, 160+block*16);
+      image(stone1, 0+block*5, 160+block*16);
+      image(stone1, 0+block*7, 160+block*16);
+      image(stone2, 0+block*2, 160+block*16);
+      image(stone2, 0+block*5, 160+block*16);
+      image(stone1, 0, 160+block*17);
+      image(stone1, 0+block, 160+block*17);
+      image(stone1, 0+block*3, 160+block*17);
+      image(stone1, 0+block*4, 160+block*17);
+      image(stone1, 0+block*6, 160+block*17);
+      image(stone1, 0+block*7, 160+block*17);
+      image(stone2, 0+block*1, 160+block*17);
+      image(stone2, 0+block*4, 160+block*17);
+      image(stone2, 0+block*7, 160+block*17);
+      image(stone1, 0, 160+block*18);
+      image(stone1, 0+block*2, 160+block*18);
+      image(stone1, 0+block*3, 160+block*18);
+      image(stone1, 0+block*5, 160+block*18);
+      image(stone1, 0+block*6, 160+block*18);
+      image(stone2, 0, 160+block*18);
+      image(stone2, 0+block*3, 160+block*18);
+      image(stone2, 0+block*6, 160+block*18);
+      image(stone1, 0+block, 160+block*19);
+      image(stone1, 0+block*2, 160+block*19);
+      image(stone1, 0+block*4, 160+block*19);
+      image(stone1, 0+block*5, 160+block*19);
+      image(stone1, 0+block*7, 160+block*19);
+      image(stone2, 0+block*2, 160+block*19);
+      image(stone2, 0+block*5, 160+block*19);
+      image(stone1, 0, 160+block*20);
+      image(stone1, 0+block, 160+block*20);
+      image(stone1, 0+block*3, 160+block*20);
+      image(stone1, 0+block*4, 160+block*20);
+      image(stone1, 0+block*6, 160+block*20);
+      image(stone1, 0+block*7, 160+block*20);
+      image(stone2, 0+block*1, 160+block*20);
+      image(stone2, 0+block*4, 160+block*20);
+      image(stone2, 0+block*7, 160+block*20);
+      image(stone1, 0, 160+block*21);
+      image(stone1, 0+block*2, 160+block*21);
+      image(stone1, 0+block*3, 160+block*21);
+      image(stone1, 0+block*5, 160+block*21);
+      image(stone1, 0+block*6, 160+block*21);
+      image(stone2, 0, 160+block*21);
+      image(stone2, 0+block*3, 160+block*21);
+      image(stone2, 0+block*6, 160+block*21);
+      image(stone1, 0+block, 160+block*22);
+      image(stone1, 0+block*2, 160+block*22);
+      image(stone1, 0+block*4, 160+block*22);
+      image(stone1, 0+block*5, 160+block*22);
+      image(stone1, 0+block*7, 160+block*22);
+      image(stone2, 0+block*2, 160+block*22);
+      image(stone2, 0+block*5, 160+block*22);
+      image(stone1, 0, 160+block*23);
+      image(stone1, 0+block, 160+block*23);
+      image(stone1, 0+block*3, 160+block*23);
+      image(stone1, 0+block*4, 160+block*23);
+      image(stone1, 0+block*6, 160+block*23);
+      image(stone1, 0+block*7, 160+block*23);
+      image(stone2, 0+block*1, 160+block*23);
+      image(stone2, 0+block*4, 160+block*23);
+      image(stone2, 0+block*7, 160+block*23);
+    
 		// Player
       //Draw hog
     switch(groundhogStat){
